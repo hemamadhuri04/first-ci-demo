@@ -1,7 +1,5 @@
 import unittest
-
 from result_logic import predict_result
-
 
 class TestResultLogic(unittest.TestCase):
 
@@ -16,7 +14,6 @@ class TestResultLogic(unittest.TestCase):
     def test_fail_due_to_attendance(self):
         result = predict_result(70, 60)
         self.assertEqual(result, "FAIL")
-
 
 if __name__ == "__main__":
     unittest.main()
